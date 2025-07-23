@@ -1,7 +1,8 @@
 package com.bitespeed.ContactLinker.controller;
 
 import Dto.Request.IdentityRequest;
-import com.bitespeed.ContactLinker.service.IdentityService;
+import com.bitespeed.ContactLinker.service.IdentityServiceImpl;
+import com.bitespeed.ContactLinker.service.interfaces.IdentityService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

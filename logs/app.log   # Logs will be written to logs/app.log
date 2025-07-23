@@ -1,0 +1,89 @@
+2025-07-23 12:58:56.983 DEBUG 19604 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : Application failed to start due to an exception
+
+org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'logging.level.com.bitespeed' to org.springframework.boot.logging.LogLevel
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:387) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:347) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$null$1(Binder.java:435) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withSource(Binder.java:561) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$700(Binder.java:537) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$2(Binder.java:436) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.AggregateElementBinder.bind(AggregateElementBinder.java:39) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.MapBinder$EntryBinder.lambda$bindEntries$0(MapBinder.java:158) ~[spring-boot-2.7.18.jar:2.7.18]
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1134) ~[na:na]
+	at org.springframework.boot.context.properties.bind.MapBinder$EntryBinder.bindEntries(MapBinder.java:158) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.MapBinder.bindAggregate(MapBinder.java:69) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.AggregateBinder.bind(AggregateBinder.java:56) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$3(Binder.java:438) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:590) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$100(Binder.java:537) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.Binder.bindAggregate(Binder.java:438) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:399) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:343) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:332) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:262) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:236) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.setLogLevels(LoggingApplicationListener.java:390) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeFinalLoggingLevels(LoggingApplicationListener.java:357) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:299) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:171) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:133) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66) ~[spring-boot-2.7.18.jar:2.7.18]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541) ~[na:na]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) ~[spring-boot-2.7.18.jar:2.7.18]
+	at com.bitespeed.ContactLinker.ContactLinkerApplication.main(ContactLinkerApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [org.springframework.boot.logging.LogLevel] for value [DEBUG  # Your base package]; nested exception is java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.DEBUG  # Your base package
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:192) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:109) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:100) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:92) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.Binder.bindProperty(Binder.java:459) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:403) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:343) ~[spring-boot-2.7.18.jar:2.7.18]
+	... 39 common frames omitted
+Caused by: java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.DEBUG  # Your base package
+	at org.springframework.boot.convert.LenientObjectToEnumConverterFactory$LenientToEnumConverter.findEnum(LenientObjectToEnumConverterFactory.java:93) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.convert.LenientObjectToEnumConverterFactory$LenientToEnumConverter.convert(LenientObjectToEnumConverterFactory.java:80) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.convert.LenientObjectToEnumConverterFactory$LenientToEnumConverter.convert(LenientObjectToEnumConverterFactory.java:61) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.core.convert.support.GenericConversionService$ConverterFactoryAdapter.convert(GenericConversionService.java:436) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41) ~[spring-core-5.3.31.jar:5.3.31]
+	... 46 common frames omitted
+
+2025-07-23 12:58:56.989 ERROR 19604 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.com.bitespeed' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.com.bitespeed
+    Value: "DEBUG  # Your base package"
+    Origin: class path resource [application.properties] - 12:29
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.DEBUG  # Your base package)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+

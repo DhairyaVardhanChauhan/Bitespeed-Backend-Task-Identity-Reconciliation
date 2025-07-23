@@ -14,22 +14,35 @@ public class CustomerContact {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "phone_number")
     private Long phoneNumber;
+
+    @Column(name = "email")
     private String email;
+
+    @Column(name = "linked_id")
     private Long linkedId;
+
+    @Column(name = "link_precedence")
     private String linkPrecedence;
 
-    private LocalDateTime createdTime;
-    private LocalDateTime modifiedTime;
+    @Column(name = "created_at")
+    private LocalDateTime createdAt;
+
+    @Column(name = "updated_at")
+    private LocalDateTime updatedAt;
+
+    @Column(name = "deleted_at")
+    private LocalDateTime deletedAt;
 
     @PrePersist
     protected void onCreate() {
-        createdTime = LocalDateTime.now();
-        modifiedTime = LocalDateTime.now();
+        createdAt = LocalDateTime.now();
+        updatedAt = LocalDateTime.now();
     }
 
     @PreUpdate
     protected void onUpdate() {
-        modifiedTime = LocalDateTime.now();
+        updatedAt = LocalDateTime.now();
     }
 }

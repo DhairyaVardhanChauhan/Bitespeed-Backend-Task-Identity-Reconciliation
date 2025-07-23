@@ -8,9 +8,8 @@ import java.util.List;
 
 public interface CustomerContactRepository extends JpaRepository<CustomerContact,Long> {
 
-    List<CustomerContact> findByEmailOrPhoneNumberOrderByCreatedTimeAsc(String email, Long phoneNumber);
-    CustomerContact findTopByEmailOrderByCreatedTime(String email);
-    CustomerContact findTopByPhoneNumberOrderByCreatedTime(Long phoneNumber);
+    CustomerContact findTopByEmailOrderByCreatedAt(String email);
+    CustomerContact findTopByPhoneNumberOrderByCreatedAt(Long phoneNumber);
     List<CustomerContact> findByLinkedId(Long id);
 
 
