@@ -1,4 +1,4 @@
-package Dto.Request;
+package com.bitespeed.ContactLinker.dto.Request;
 
 import lombok.Data;
 

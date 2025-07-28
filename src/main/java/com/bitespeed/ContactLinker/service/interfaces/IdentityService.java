@@ -1,8 +1,7 @@
 package com.bitespeed.ContactLinker.service.interfaces;
 
 
-import Dto.Request.IdentityRequest;
-import Dto.Response.ContactResponse;
+import com.bitespeed.ContactLinker.dto.Request.IdentityRequest;
 import org.springframework.http.ResponseEntity;
 
 public interface IdentityService {

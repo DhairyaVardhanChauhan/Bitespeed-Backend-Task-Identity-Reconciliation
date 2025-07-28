@@ -1,7 +1,7 @@
 package com.bitespeed.ContactLinker.service;
 
-import Dto.Request.IdentityRequest;
-import Dto.Response.ContactResponse;
+import com.bitespeed.ContactLinker.dto.Request.IdentityRequest;
+import com.bitespeed.ContactLinker.dto.Response.ContactResponse;
 import com.bitespeed.ContactLinker.entity.CustomerContact;
 import com.bitespeed.ContactLinker.repository.CustomerContactRepository;
 import com.bitespeed.ContactLinker.service.interfaces.IdentityService;

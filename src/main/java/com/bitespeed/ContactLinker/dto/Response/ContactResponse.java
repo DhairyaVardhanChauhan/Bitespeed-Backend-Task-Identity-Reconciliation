@@ -1,4 +1,4 @@
-package Dto.Response;
+package com.bitespeed.ContactLinker.dto.Response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
